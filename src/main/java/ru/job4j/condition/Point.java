@@ -8,7 +8,7 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        double result = Point.distsnce(4, 2, 10, 12);
+        double result = Point.distsnce(2, 2, 10, 12);
         System.out.println("result (0, 0) to (2, 0) " + result);
     }
 }
