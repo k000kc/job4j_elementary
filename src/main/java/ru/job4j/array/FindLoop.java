@@ -11,4 +11,15 @@ public class FindLoop {
         }
         return rsl;
     }
+
+    public static int indexInRange(int[] date, int el, int start, int finish) {
+        int rsl = -1;
+        for (int i = start; i <= finish; i++) {
+            if (date[i] == el) {
+                rsl = i;
+                break;
+            }
+        }
+        return rsl;
+    }
 }
