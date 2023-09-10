@@ -25,4 +25,11 @@ class CheckPrimeNumberTest {
         boolean result = CheckPrimeNumber.check(number);
         assertThat(result).isFalse();
     }
+
+    @Test
+    void when0() {
+        int number = 0;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isFalse();
+    }
 }
