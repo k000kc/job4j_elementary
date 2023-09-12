@@ -1,12 +1,12 @@
 package ru.job4j.array;
 
 public class SortSelected {
-    public static int[] sort(int[] date) {
-        for (int i = 0; i < date.length; i++) {
-            int min = MinDiapason.findMin(date, i, date.length - 1);
-            int index = FindLoop.indexInRange(date, min, i, date.length - 1);
-            date = SwitchArray.swap(date, i, index);
+    public static int[] sort(int[] data) {
+        for (int i = 0; i < data.length; i++) {
+            int min = MinDiapason.findMin(data, i, data.length - 1);
+            int index = FindLoop.indexInRange(data, min, i, data.length - 1);
+            SwitchArray.swap(data, i, index);
         }
-        return date;
+        return data;
     }
 }
